@@ -147,17 +147,6 @@ const propertyTextValue = (
   return defaultFn()
 }
 
-const propertyGameValue = (
-  { schema, pageHeader },
-  defaultFn: () => React.ReactNode
-) => {
-  if (pageHeader && schema?.name?.toLowerCase() === 'game') {
-    return <b>{defaultFn()}</b>
-  }
-
-  return defaultFn()
-}
-
 export const NotionPage: React.FC<types.PageProps> = ({
   site,
   recordMap,
@@ -180,8 +169,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       Header: NotionPageHeader,
       propertyLastEditedTimeValue,
       propertyTextValue,
-      propertyDateValue,
-      propertyGameValue
+      propertyDateValue
     }),
     []
   )
