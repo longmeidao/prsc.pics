@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'longmeidao',
 
   // open graph metadata (optional)
-  description: '',
+  description: 'Printscreening, lifelogging.',
 
   // social usernames (optional)
   twitter: 'longmeidao',
